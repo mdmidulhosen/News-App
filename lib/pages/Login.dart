@@ -24,11 +24,11 @@ class Login extends StatelessWidget {
                 children: [
                   Container(
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      padding: const EdgeInsets.only(left: 18, right: 18),
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(top: 20),
+                            padding: const EdgeInsets.only(top: 18),
                             child: TextField(
                               decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(

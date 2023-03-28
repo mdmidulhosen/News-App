@@ -43,7 +43,7 @@ class Admins extends StatelessWidget {
                   border: OutlineInputBorder(
                     
                   ),
-                  hintText: 'https://example.com',hintStyle: TextStyle(color: Color.fromARGB(105, 0, 0, 0)),
+                  hintText: 'https://www.example.com',hintStyle: TextStyle(color: Color.fromARGB(105, 0, 0, 0)),
                 ),
                 ),
               
@@ -112,9 +112,11 @@ class Admins extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Categories", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 16),),
-                    ElevatedButton(onPressed: () {
+                    
+                    ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Color(0xff5D3891))), onPressed: () {
                       
                     }, child: 
+                    
                     Text("Choose"),
                     ),
                   ],
@@ -202,7 +204,7 @@ class Admins extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Topics", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 16),),
-                    ElevatedButton(onPressed: () {
+                    ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Color(0xff5D3891))), onPressed: () {
                       
                     }, child: 
                     Text("Choose"),
