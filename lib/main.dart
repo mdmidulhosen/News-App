@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
       //     bodyText2: TextStyle(fontSize: 14, color: Colors.grey),
       //   ),
       // ),
-      home: Home(),
+      home: Auditor(),
     );
   }
 }

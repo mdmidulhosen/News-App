@@ -8,6 +8,16 @@ class CategoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("News App"),
+        centerTitle: true,
+        backgroundColor: Color(0xffF11842),
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.home),
+        ),
+
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(18.0),
@@ -17,7 +27,7 @@ class CategoryView extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(bottom: 10),
-                  child: Text("Your Selected Categories", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),),
+                  child: Text("Your Selected Categories", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600,fontSize: 18),),
                 ),
                 ListView(
                   shrinkWrap: true,

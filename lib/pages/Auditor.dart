@@ -1,3 +1,5 @@
+import 'package:ecommerce/pages/Category.dart';
+import 'package:ecommerce/pages/Home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -8,6 +10,16 @@ class Auditor extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("News App"),
+        centerTitle: true,
+        backgroundColor: Color(0xffF11842),
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.home),
+        ),
+
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(18.0),
@@ -136,7 +148,11 @@ class Auditor extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context, 
+                                    MaterialPageRoute(builder: (context) =>Home(),),);
+                                },
                                 style: ElevatedButton.styleFrom(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: 10.0, vertical: 10.0),

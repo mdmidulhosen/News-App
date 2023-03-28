@@ -8,6 +8,16 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("News App"),
+        centerTitle: true,
+        backgroundColor: Color(0xffF11842),
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.home),
+        ),
+
+      ),
       body: 
       SingleChildScrollView(
         child: Padding(
