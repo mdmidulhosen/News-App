@@ -81,48 +81,9 @@ class Category extends StatelessWidget {
                 // add category option code start from here 
 
              
-
+              
                 
-                Padding(
-                  padding: const EdgeInsets.only(top: 20, bottom: 10),
-                  child:
-                  Text("Add a new category", style: TextStyle(fontWeight: FontWeight.w600),),
-                ),
-                   TextField(
-                      decoration: InputDecoration(
-                        suffixIcon: Align(
-                        widthFactor: 1.0,
-                        heightFactor: 1.0,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Color(0xff5D3891),
-                            borderRadius: BorderRadius.only(topRight: Radius.circular(10), bottomRight: Radius.circular(10))
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(18.0),
-                            child: Text("Add", style: TextStyle(color: Colors.white),),
-                          )
-                          ),),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black, width: 1),
-                        borderRadius: BorderRadius.circular(10),),
-                        focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.black,width: 2),borderRadius: BorderRadius.circular(10)),
-                      border: OutlineInputBorder(
-                        
-                      ),
-                      hintText: 'Add New Category',hintStyle: TextStyle(color: Color.fromARGB(105, 0, 0, 0)),
-                    ),
-                    ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 20),
-                  child: Container(
-                    decoration: BoxDecoration(
-                          border: Border(bottom: BorderSide(
-                            width: 0.5, color: Color.fromARGB(255, 195, 195, 195),
-                          ))
-                        ),
-                  ),
-                ),
+                
               
               // select category option code start from here 
 
@@ -131,6 +92,19 @@ class Category extends StatelessWidget {
                   child:
                   Text("Categories", style: TextStyle(fontWeight: FontWeight.w600),),
                 ),
+
+                Container(
+                margin: EdgeInsets.only(top: 10),
+                child: 
+                ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Color(0xff5D3891))), onPressed: () {
+                        }, child: 
+                        Padding(
+                          padding: const EdgeInsets.all(10),
+                          child: Text("Add a New Category",),
+                        ),
+                        ),
+              ),
+              
                 Container(
                   child: Padding(
                     padding: const EdgeInsets.only(top: 10, bottom: 10),
