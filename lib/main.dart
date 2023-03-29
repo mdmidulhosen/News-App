@@ -5,6 +5,7 @@ import 'package:ecommerce/pages/Login.dart';
 import 'package:ecommerce/pages/Admins.dart';
 import 'package:ecommerce/pages/Home.dart';
 import 'package:ecommerce/pages/Auditor.dart';
+import 'package:ecommerce/pages/Topic.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
       //     bodyText2: TextStyle(fontSize: 14, color: Colors.grey),
       //   ),
       // ),
-      home: Auditor(),
+      home: Category(),
     );
   }
 }

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-class Category extends StatelessWidget {
-  const Category({super.key});
+class Topic extends StatelessWidget {
+  const Topic({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class Category extends StatelessWidget {
                       border: OutlineInputBorder(
                         
                       ),
-                      hintText: 'Search Categories',hintStyle: TextStyle(color: Color.fromARGB(105, 0, 0, 0)),
+                      hintText: 'Search Topics',hintStyle: TextStyle(color: Color.fromARGB(105, 0, 0, 0)),
                     ),
                     ),
 
@@ -49,7 +49,7 @@ class Category extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 20),
                   child:
-                  Text("Your Selected Categories", style: TextStyle(fontWeight: FontWeight.w600),),
+                  Text("Your Selected Topics", style: TextStyle(fontWeight: FontWeight.w600),),
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -68,7 +68,7 @@ class Category extends StatelessWidget {
                         }, child: 
                         Padding(
                           padding: const EdgeInsets.all(10),
-                          child: Text("Categories 2",),
+                          child: Text("Topics 2",),
                         ),
                         ),
                         
@@ -86,7 +86,7 @@ class Category extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 20, bottom: 10),
                   child:
-                  Text("Add a new category", style: TextStyle(fontWeight: FontWeight.w600),),
+                  Text("Add a New Topic", style: TextStyle(fontWeight: FontWeight.w600),),
                 ),
                    TextField(
                       decoration: InputDecoration(
@@ -110,7 +110,7 @@ class Category extends StatelessWidget {
                       border: OutlineInputBorder(
                         
                       ),
-                      hintText: 'Add New Category',hintStyle: TextStyle(color: Color.fromARGB(105, 0, 0, 0)),
+                      hintText: 'Add New Topic',hintStyle: TextStyle(color: Color.fromARGB(105, 0, 0, 0)),
                     ),
                     ),
                 Padding(
@@ -129,7 +129,7 @@ class Category extends StatelessWidget {
               Padding(
                   padding: const EdgeInsets.only(top: 20),
                   child:
-                  Text("Categories", style: TextStyle(fontWeight: FontWeight.w600),),
+                  Text("Topics", style: TextStyle(fontWeight: FontWeight.w600),),
                 ),
                 Container(
                   child: Padding(
@@ -150,7 +150,7 @@ class Category extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("This is our category 1", style: TextStyle(color: Colors.black),),
+                              Text("This is our Topic 1", style: TextStyle(color: Colors.black),),
 
                               ElevatedButton(
                               onPressed: () {},
@@ -179,7 +179,7 @@ class Category extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("This is our category 2", style: TextStyle(color: Colors.black),),
+                              Text("This is our Topic 2", style: TextStyle(color: Colors.black),),
 
                               ElevatedButton(
                               onPressed: () {},
@@ -208,7 +208,7 @@ class Category extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("This is our category 3", style: TextStyle(color: Colors.black),),
+                              Text("This is our Topic 3", style: TextStyle(color: Colors.black),),
 
                               ElevatedButton(
                               onPressed: () {},
