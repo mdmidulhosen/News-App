@@ -1,9 +1,14 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:image_picker/image_picker.dart';
 
 class AddTopic extends StatelessWidget {
   const AddTopic({super.key});
+
+
 
   @override
   Widget build(BuildContext context) {
